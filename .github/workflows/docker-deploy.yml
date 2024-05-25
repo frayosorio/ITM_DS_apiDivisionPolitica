@@ -26,8 +26,8 @@ jobs:
 
     - name: Stop and remove old container
       run: |
-        docker stop dockerapidivisionpolitica || true
-        docker rm dockerapidivisionpolitica || true
+        docker stop dockerapidivisionpolitica ; true
+        docker rm dockerapidivisionpolitica ; true
 
     - name: Run new container
       run: docker container run --network reddivisionpolitica --name dockerapidivisionpolitica -p 3000:3030 -d apidivisionpolitica
