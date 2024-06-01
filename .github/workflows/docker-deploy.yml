@@ -29,5 +29,5 @@ jobs:
         docker stop dockerapidivisionpolitica 
         docker rm dockerapidivisionpolitica 
 
-    - name: Run new container
+    - name: Ejecutar nuevo contenedor
       run: docker container run --network reddivisionpolitica --name dockerapidivisionpolitica -p 3000:3030 -d apidivisionpolitica
