@@ -6,7 +6,6 @@ module.exports = (app) => {
     app.post('/paises/agregar', controlador.agregar);
     app.put('/paises/modificar', controlador.modificar);
     app.delete('/paises/eliminar/:id', controlador.eliminar);
-
     app.get('/paises/capital/:pais', controlador.capital);
 
 
