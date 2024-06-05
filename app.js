@@ -14,6 +14,8 @@ require('./rutas/pais.rutas')(app);
 
 const puerto=3030;
 
+console.log('Bienvenido a la API de División Política');
+
 app.listen(puerto, () => {
     console.log(`API iniciada y escuchando por el puerto ${puerto}`)
 });
